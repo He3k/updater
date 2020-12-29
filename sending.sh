@@ -14,3 +14,6 @@ echo "Time: $(date): key saved" >> logs/send.log
 git push
 echo "Time: $(date): key sended"
 echo "Time: $(date): key sended" >> logs/send.log
+./updater.sh
+   echo "Time: $(date): run updater.sh"
+   echo "Time: $(date): run updater.sh" >> logs/updater.log
