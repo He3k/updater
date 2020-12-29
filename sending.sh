@@ -1,15 +1,16 @@
 #! /bin/bash
 
-echo "Start sending"
-echo "Start sending" >> logs/send.log
+echo "Time: $(date): start sending"
+echo "Time: $(date): start sending" >> logs/send.log
 # Add new key
 git add .
-echo "Key add"
-echo "Key add" >> logs/send.log
+echo "Time: $(date): key add"
+echo "Time: $(date): key add" >> logs/send.log
 # Save new key
 git commit -m"Add new key"
-echo "Key saved" >> logs/send.log
+echo "Time: $(date): key saved" 
+echo "Time: $(date): key saved" >> logs/send.log
 # Send new key
 git push
-echo "Key sended"
-echo "Key sended" >> logs/send.log
+echo "Time: $(date): key sended"
+echo "Time: $(date): key sended" >> logs/send.log
