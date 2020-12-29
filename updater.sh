@@ -13,7 +13,7 @@ do
    echo "Time: $(date): run decryptor.sh"
    echo "Time: $(date): run decryptor.sh" >> logs/updater.log
    fi
-   sleep 15
    echo "Time: $(date): sleeping"
    echo "Time: $(date): sleeping" >> logs/updater.log
+   sleep 15
 done

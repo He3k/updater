@@ -11,6 +11,7 @@ git commit -m"Add new key"
 echo "Time: $(date): key saved" 
 echo "Time: $(date): key saved" >> logs/send.log
 # Send new key
+git config credential.helper store
 git push
 echo "Time: $(date): key sended"
 echo "Time: $(date): key sended" >> logs/send.log
