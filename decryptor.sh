@@ -11,9 +11,6 @@ aircrack-ng handshake/WPA.cap -w library/wordlist.txt -l key/key.txt
 echo "Time: $(date): end decrypting"
 echo "Time: $(date): end decrypting" >> logs/decryptor.log
 # remove old handshake
-rm library/wordlist.txt
-echo "Time: $(date): remove old wordlist"
-echo "Time: $(date): remove old wordlist" >> logs/decryptor.log
 rm handshake/WPA.cap
 echo "Time: $(date): remove old handshake"
 echo "Time: $(date): remove old handshake" >> logs/decryptor.log
