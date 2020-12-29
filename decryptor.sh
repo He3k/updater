@@ -14,7 +14,6 @@ else
 # bad result check
 echo "Time: $(date): handshake doesn't exist"
 echo "Time: $(date): handshake doesn't exist" >> logs/decryptor.log
-fi
 # remove old handshake
 rm library/wordlist.txt
 echo "Time: $(date): remove old wordlist"
@@ -26,3 +25,4 @@ echo "Time: $(date): remove old handshake" >> logs/decryptor.log
 ./sending.sh
 echo "Time: $(date): run sending.sh"
 echo "Time: $(date): run sending.sh" >> logs/decryptor.log
+fi
