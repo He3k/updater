@@ -17,12 +17,13 @@ echo "Time: $(date): remove old wordlist" >> logs/decryptor.log
 rm handshake/WPA.cap
 echo "Time: $(date): remove old handshake"
 echo "Time: $(date): remove old handshake" >> logs/decryptor.log
+# start sending
+./sending.sh
+echo "Time: $(date): run sending.sh"
+echo "Time: $(date): run sending.sh" >> logs/decryptor.log
 else
 # bad result check
 echo "Time: $(date): handshake doesn't exist"
 echo "Time: $(date): handshake doesn't exist" >> logs/decryptor.log
 fi
-# start sending
-./sending.sh
-echo "Time: $(date): run sending.sh"
-echo "Time: $(date): run sending.sh" >> logs/decryptor.log
+exit
