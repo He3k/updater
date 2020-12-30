@@ -5,7 +5,7 @@ do
    echo "Time: $(date): wait new instruction"
    echo "Time: $(date): wait new instruction" >> logs/updater.log
    git pull --ff-only
-   if [ -e handshake/WPA.cap ]
+   if [ -e handshake/*.cap ]
    then
    echo "Time: $(date): get new instruction"
    echo "Time: $(date): get new instruction" >> logs/updater.log
